@@ -1,6 +1,9 @@
 name: Build and Push Image
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -28,4 +31,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: umeraltaf/nginx-custom-errors:1.0
+          tags: uomumeraltaf/nginx-custom-errors:1.0
