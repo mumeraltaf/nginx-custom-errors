@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ARG GOLANG_VERSION
+ARG GOLANG_VERSION=1.23.0
 
 FROM golang:${GOLANG_VERSION}-alpine3.20 as builder
 
