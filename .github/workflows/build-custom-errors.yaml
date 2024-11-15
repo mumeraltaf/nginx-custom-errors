@@ -11,9 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: build
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup Runner
-        run: lscpu
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -31,4 +28,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: uomumeraltaf/nginx-custom-errors:1.0
+          tags: uomumeraltaf/nginx-custom-errors:${{ github.sha }}
