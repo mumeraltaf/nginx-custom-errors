@@ -1,6 +1,6 @@
 # nginx-custom-errors
 
-Implementation of custom error pages for nginx as described here: https://github.com/kubernetes/ingress-nginx/tree/main/images/custom-error-pages
+Implementation of custom error pages for NGINX Ingress Controller as described here: https://github.com/kubernetes/ingress-nginx/tree/main/images/custom-error-pages
 
 ## Build
     
