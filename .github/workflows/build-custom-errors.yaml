@@ -28,4 +28,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: uomumeraltaf/nginx-custom-errors:${{ github.sha }}
+          tags: uomumeraltaf/nginx-custom-errors:$(git rev-parse --short HEAD)
