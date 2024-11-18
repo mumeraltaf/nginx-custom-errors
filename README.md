@@ -13,13 +13,13 @@ docker build -t custom-erros:a .
 ```bash
 docker run -p 8080:8080 -e DEBUG=true docker.io/library/custom-erros:a
 ```
-DEBUG=true will enable debug mode, which will print the error code and the error message in the response headers.
+* DEBUG=true: enable debug mode, which will print the error code and the error message in the response headers.
 
 ## Test
 
 ```bash
 curl --header "X-Code: 404" --header "X-Format: text/html"  localhost:8080
-<span>The page you're looking for could not be found YUP.</span>
+<span>The page youre looking for could not be found YUP.</span>
 
 curl --header "X-Code: 503" localhost:8080
 <span>Something went wrong 5xx Custom.</span>
